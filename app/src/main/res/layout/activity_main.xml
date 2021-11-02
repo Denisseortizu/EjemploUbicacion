@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/lbIngresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa Ciudad"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/etCiudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/lbIngresa"
+
+        />
+    <Button
+        android:id="@+id/btnLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCiudad"
+        android:layout_marginBottom="300dp"
+        android:layout_marginTop="40dp"
+        android:text="Latitud &amp; Longitud"
+        />
+    <TextView
+        android:id="@+id/lbCiudad"
+        android:text="Ciudad"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="28dp"
+        app:layout_constraintTop_toBottomOf="@id/btnLL"
+        app:layout_constraintBottom_toTopOf="@id/lbLong"
+        app:layout_constraintRight_toLeftOf="@id/txtCiudad"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txtCiudad"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="28dp"
+        android:text="Una ciudad"
+        app:layout_constraintLeft_toRightOf="@id/lbCiudad"
+        app:layout_constraintTop_toBottomOf="@id/btnLL"
+        app:layout_constraintBottom_toTopOf="@id/txtLong"
+        />
+
+    <TextView
+        android:id="@+id/lbLong"
+        android:text="Longitud"
+        android:textSize="25sp"
+        android:layout_margin="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lbCiudad"
+        app:layout_constraintRight_toLeftOf="@id/txtLong"
+        app:layout_constraintBottom_toTopOf="@id/lbLati"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:text="XXXXX"
+        android:id="@+id/txtLong"
+        android:textSize="20sp"
+        android:layout_margin="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtCiudad"
+        app:layout_constraintLeft_toRightOf="@id/lbLong"
+        app:layout_constraintBottom_toTopOf="@id/txtLati"
+        />
+    <TextView
+        android:id="@+id/lbLati"
+        android:text="Latitud"
+        android:textSize="25sp"
+        android:layout_margin="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lbLong"
+        app:layout_constraintRight_toLeftOf="@id/txtLati"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:text="XXXXX"
+        android:textSize="20sp"
+        android:id="@+id/txtLati"
+        android:layout_margin="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtLong"
+        app:layout_constraintLeft_toRightOf="@id/lbLati"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
